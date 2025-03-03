@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Header Styling */
+header {
+    background: #222; /* Dark theme */
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Website Logo */
+header h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* Nav Items */
+.nav-links li {
+    display: inline;
+}
+
+/* Nav Links */
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    background: #ff9800; /* Orange hover effect */
+    color: #222;
+    transform: scale(1.1);
+}
+
+/* Active Link */
+.nav-links a:active {
+    background: #f44336;
+    color: white;
+}
+
+/* Responsive Navigation for Mobile */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* Category Section */
+.category {
+    margin-bottom: 40px;
+}
+
+.category h3 {
+    font-size: 24px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Product Grid */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Product Card */
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product Name & Price */
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product p {
+    font-size: 16px;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Add to Cart Button */
+.product button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.product button:hover {
+    background: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .product img {
+        height: 180px;
+    }
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+.cart {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cart-items {
+    list-style: none;
+    padding: 0;
+}
+.cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.checkout {
+    margin-top: 20px;
+}
+
+.section h2 {
+    text-align: center; /* Centers the title */
+    font-size: 28px; /* Adjust size if needed */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add spacing below */
+    color: #222; /* Adjust color */
+}
+.icon-group {
+  display: inline-flex; /* or display: flex; */
+  align-items: center; /* Vertically align icons */
+}
+
+.search-icon, .cart-icon {
+  margin-left: 5px; /* Adjust as needed for spacing between icons */
+}
+
+.cart-icon{
+    margin-left: 10px;
+}
+
+/* Optional: Adjust spacing for the entire nav-container if needed */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Or space-around, or flex-start, etc. */
+}
